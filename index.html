@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#100b19">
+<meta name="description" content="Fan page non ufficiale di CHECKMATE — La Scacchiera di Sicilia. Personaggi, Stand, lore ed episodi.">
+<title>CHECKMATE — La Scacchiera di Sicilia | Fan Page</title>
+<style>
+:root{--bg:#0d0a13;--panel:#171221;--panel2:#21182f;--ink:#f7f0ff;--muted:#b9accb;--gold:#f6c85f;--violet:#b88aff;--orange:#ff784f;--line:#3a2b4d;--max:1180px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 70% 0%,#29143e 0,transparent 35%),var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.65}
+a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+header{position:sticky;top:0;z-index:20;background:#0d0a13eF;backdrop-filter:blur(16px);border-bottom:1px solid #ffffff18}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:1000;letter-spacing:.12em;color:var(--gold);font-size:1.1rem}.brand span{color:var(--ink);font-weight:500;letter-spacing:.03em;font-size:.72rem;display:block;margin-top:-5px}
+nav{display:flex;gap:20px;align-items:center;font-size:.9rem;color:var(--muted)}nav a:hover{color:var(--gold)}.menu{display:none;background:none;border:1px solid var(--line);color:white;border-radius:10px;padding:8px 12px}
+.hero{padding:68px 0 76px;position:relative;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:42px;align-items:center}.eyebrow{color:var(--gold);font-size:.78rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase}.hero h1{font-size:clamp(3.2rem,8vw,6.6rem);line-height:.88;margin:18px 0 14px;letter-spacing:-.07em;text-shadow:4px 4px 0 #572b7b}.hero h1 em{display:block;color:var(--gold);font-style:normal;font-size:.42em;letter-spacing:.02em;margin-top:20px}.lead{font-size:1.12rem;color:#ddd1eb;max-width:590px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{border:1px solid var(--gold);background:var(--gold);color:#1a1021;padding:12px 19px;border-radius:999px;font-weight:850;cursor:pointer;display:inline-flex;align-items:center;gap:8px}.btn.secondary{background:transparent;color:var(--ink);border-color:#765b91}.btn:hover{transform:translateY(-2px);filter:brightness(1.08)}.hero-art{min-height:430px;border-radius:24px;overflow:hidden;border:1px solid #ffffff22;background:url('checkmate-poster.png') center/cover;box-shadow:0 25px 80px #0008;position:relative}.hero-art img{width:100%;height:100%;object-fit:cover;display:block;min-height:430px}.poster-fallback{height:430px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:4rem;font-weight:1000;color:var(--gold);text-shadow:3px 4px #1b102d}.poster-fallback small{font-size:.85rem;letter-spacing:.25em;color:white}
+.hero-art:after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 90px #10081788;pointer-events:none}
+.stats{display:flex;gap:24px;flex-wrap:wrap;margin-top:28px;color:var(--muted);font-size:.85rem}.stats b{display:block;color:var(--ink);font-size:1.25rem}
+section{padding:76px 0;scroll-margin-top:76px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:28px}.kicker{color:var(--orange);font-weight:850;letter-spacing:.16em;text-transform:uppercase;font-size:.72rem}.section-head h2{font-size:clamp(2rem,4vw,3.2rem);line-height:1.05;margin:8px 0 0;letter-spacing:-.04em}.section-head p{color:var(--muted);max-width:520px;margin:0}
+.notice{border:1px solid #8b6b35;background:linear-gradient(100deg,#342513,#21182f);padding:16px 18px;border-radius:14px;color:#f6e6bd;margin:22px 0}.notice b{color:var(--gold)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:linear-gradient(145deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:18px;padding:22px;position:relative;overflow:hidden}.card h3{margin:0 0 6px;font-size:1.25rem}.card p{color:var(--muted);margin:8px 0}.tag{display:inline-block;border:1px solid #735b8d;color:#ddc8fa;border-radius:999px;padding:3px 9px;font-size:.7rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase}.tag.gold{border-color:#987332;color:var(--gold)}.character{min-height:270px}.character .symbol{font-size:3.2rem;color:var(--gold);line-height:1.2;margin-bottom:12px}.character .stand{color:var(--violet);font-weight:800}.statsline{display:flex;gap:8px;flex-wrap:wrap;margin-top:15px}.statsline span{font-size:.75rem;background:#ffffff0b;border:1px solid #ffffff12;border-radius:7px;padding:5px 8px;color:#e7d9f7}
+.lore-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.piece-list{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:16px}.piece{padding:12px;background:#ffffff08;border:1px solid #ffffff12;border-radius:12px}.piece b{color:var(--gold);display:block;font-size:1.15rem}
+.episode-list{display:grid;gap:12px}.episode{border:1px solid var(--line);background:var(--panel);border-radius:16px;overflow:hidden}.episode summary{list-style:none;cursor:pointer;padding:18px 20px;display:flex;align-items:center;gap:16px}.episode summary::-webkit-details-marker{display:none}.ep-num{font-size:1.25rem;font-weight:950;color:var(--gold);min-width:42px}.ep-title{font-weight:850;flex:1}.ep-state{font-size:.7rem;color:var(--muted);border:1px solid var(--line);padding:4px 9px;border-radius:999px}.episode[open] summary{border-bottom:1px solid var(--line);background:#ffffff05}.ep-body{padding:22px;max-width:850px}.ep-body h4{color:var(--gold);margin:20px 0 5px}.ep-body p{color:#e3d8ef;margin:8px 0}.dialogue{border-left:3px solid var(--violet);padding:8px 14px;margin:10px 0;background:#ffffff06;border-radius:0 10px 10px 0}.dialogue b{color:var(--gold)}.scene{font-size:.72rem;letter-spacing:.12em;color:var(--orange);font-weight:900;text-transform:uppercase;margin-top:20px}
+.cast-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.cast-card{padding:0;overflow:hidden}.cast-top{height:140px;background:linear-gradient(135deg,#3b1d60,#171221);display:flex;align-items:center;justify-content:center;font-size:4rem}.cast-card .inner{padding:18px}
+.ability{border-left:3px solid var(--gold);padding-left:14px;margin:14px 0;color:#e4d9ef}.timeline{border-left:2px solid #6c4a91;margin-left:10px;padding-left:22px}.timeline-item{position:relative;margin:0 0 22px}.timeline-item:before{content:"";position:absolute;left:-29px;top:7px;width:11px;height:11px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 5px #f6c85f22}
+.quote{font-size:clamp(1.3rem,3vw,2rem);font-weight:850;color:var(--gold);line-height:1.3}.quote-box{padding:30px;border:1px solid #765b91;background:linear-gradient(120deg,#21182f,#311a43);border-radius:20px}
+footer{border-top:1px solid var(--line);padding:32px 0;color:var(--muted);font-size:.85rem}.footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.search{width:100%;max-width:360px;background:#171221;border:1px solid var(--line);padding:11px 14px;border-radius:10px;color:white}
+.reader-tools{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:16px 0}
+#topBtn{position:fixed;right:18px;bottom:18px;border:1px solid var(--line);background:#251a35;color:white;border-radius:50%;width:46px;height:46px;cursor:pointer;display:none}
+@media(max-width:850px){.hero-grid,.lore-grid{grid-template-columns:1fr}.hero-art{min-height:300px}.hero-art img{min-height:300px}.grid,.cast-grid{grid-template-columns:repeat(2,1fr)}nav{display:none;position:absolute;top:72px;left:0;right:0;background:#100b19;padding:18px 24px;flex-direction:column;align-items:flex-start;border-bottom:1px solid var(--line)}nav.open{display:flex}.menu{display:block}.section-head{display:block}.section-head p{margin-top:12px}}
+@media(max-width:560px){.wrap{width:min(100% - 28px,var(--max))}.hero{padding:48px 0}.hero-grid{gap:24px}.hero-art,.hero-art img{min-height:240px}.grid,.cast-grid{grid-template-columns:1fr}.piece-list{grid-template-columns:1fr}.stats{gap:15px}.episode summary{padding:15px 12px;gap:10px}.ep-state{display:none}section{padding:54px 0}}
+
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.gallery-card{padding:0;overflow:hidden;cursor:pointer;text-align:left;color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:17px;transition:transform .2s,border-color .2s}
+.gallery-card:hover{transform:translateY(-4px);border-color:var(--gold)}
+.gallery-card img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;background:#21182f}
+.gallery-caption{padding:14px 16px}
+.gallery-caption b{display:block;color:var(--gold);margin-bottom:3px}
+.gallery-caption small{color:var(--muted);line-height:1.45;display:block}
+.lightbox{position:fixed;inset:0;z-index:60;background:#05030beF;display:none;align-items:center;justify-content:center;padding:24px}
+.lightbox.open{display:flex}
+.lightbox-inner{max-width:min(1100px,100%);max-height:100%;display:flex;flex-direction:column;align-items:center;gap:12px}
+.lightbox img{max-width:100%;max-height:78vh;object-fit:contain;border-radius:12px;box-shadow:0 20px 90px #000}
+.lightbox p{color:#eee;margin:0;text-align:center}
+.lightbox-close{position:absolute;top:16px;right:20px;border:1px solid #ffffff55;background:#21182f;color:white;border-radius:999px;padding:9px 15px;cursor:pointer}
+@media(max-width:850px){.gallery-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.gallery-grid{grid-template-columns:1fr}.lightbox{padding:12px}}
+
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <a class="brand" href="#home">CHECKMATE <span>LA SCACCHIERA DI SICILIA</span></a>
+  <button class="menu" id="menuBtn" aria-label="Apri menu">☰</button>
+  <nav id="nav"><a href="#storia">La storia</a><a href="#personaggi">Personaggi</a><a href="#stand">Stand</a><a href="#episodi">Episodi</a><a href="#galleria">Galleria</a><a href="#lore">Universo</a></nav>
+</div></header>
+
+<main>
+<section class="hero" id="home"><div class="wrap hero-grid">
+ <div>
+  <div class="eyebrow">Fan page non ufficiale · Anime originale</div>
+  <h1>CHECK<span style="color:var(--orange)">MATE</span><em>LA PARTITA È APPENA INIZIATA.</em></h1>
+  <p class="lead">Due ragazzi di Grotte. Due Stand fuori dal comune. Un'antica scacchiera capace di cambiare il destino. Benvenuti nella saga soprannaturale dove la strategia incontra il caos.</p>
+  <div class="hero-actions"><a class="btn" href="#episodi">▶ Leggi l'episodio 1</a><a class="btn secondary" href="#personaggi">Scopri i personaggi</a></div>
+  <div class="stats"><div><b>12</b> Episodi previsti</div><div><b>2</b> Protagonisti</div><div><b>7</b> Pezzi leggendari</div><div><b>∞</b> Mosse imprevedibili</div></div>
+ </div>
+ <div class="hero-art"><img src="checkmate-poster.png" alt="Poster illustrato della saga CHECKMATE"></div>
+</div></section>
+
+<section id="storia"><div class="wrap">
+ <div class="section-head"><div><div class="kicker">Il punto di partenza</div><h2>Una partita fuori controllo.</h2></div><p>Una serata ordinaria a Grotte diventa l'inizio di qualcosa di molto più grande.</p></div>
+ <div class="notice"><b>Nota sullo stato della saga:</b> l'Episodio 01 è il primo episodio sviluppato in forma narrativa completa. Gli episodi 02–12 sono attualmente presentati come trama e anticipazioni: non sono ancora capitoli completi.</div>
+ <div class="card"><p>In Sicilia, alcune persone iniziano a manifestare poteri soprannaturali chiamati <b>Stand</b>. Manuel e Peppe vengono trascinati in una partita che coinvolge un antico artefatto: la <b>Scacchiera di Akragas</b>, composta da sette pezzi misteriosi. Un'organizzazione segreta vuole riunirli per imporre un ordine assoluto al mondo.</p><p>Manuel affronta il mistero con strategia e calcolo. Peppe lo affronta con creatività e improvvisazione. Insieme dovranno capire se il destino è una partita già scritta… o se esiste sempre una mossa inaspettata.</p></div>
+</div></section>
+
+<section id="personaggi"><div class="wrap">
+ <div class="section-head"><div><div class="kicker">Il duo protagonista</div><h2>Due caratteri. Due modi di combattere.</h2></div><p>Il loro rapporto è fatto di battute, rivalità, fiducia conquistata e piani che raramente vanno come previsto.</p></div>
+ <div class="grid">
+  <article class="card character"><div class="symbol">♚</div><span class="tag gold">Protagonista</span><h3>Manuel</h3><p class="stand">Stand: CHECKMATE</p><p>Strategico, competitivo e sarcastico. Osserva ogni dettaglio, studia le possibilità e cerca sempre di anticipare l'avversario. La sua sicurezza, però, può trasformarsi in testardaggine.</p><div class="statsline"><span>Strategia</span><span>Competitività</span><span>Sarcasmo</span></div></article>
+  <article class="card character"><div class="symbol">🦊</div><span class="tag gold">Protagonista</span><h3>Peppe</h3><p class="stand">Stand: FOXFIRE</p><p>Impulsivo, ironico e creativo. Trova soluzioni dove gli altri vedono soltanto ostacoli. Il suo istinto può salvare la situazione… oppure complicarla in modo spettacolare.</p><div class="statsline"><span>Creatività</span><span>Improvvisazione</span><span>Ironia</span></div></article>
+  <article class="card character"><div class="symbol">♛</div><span class="tag">Antagonista</span><h3>Il Maestro</h3><p class="stand">Stand: ORDINANCE</p><p>Crede che il libero arbitrio sia un'illusione. Vuole riunire i sette pezzi della Scacchiera di Akragas e riscrivere il mondo secondo un ordine perfetto.</p><div class="statsline"><span>Controllo</span><span>Autorità</span><span>Enigma</span></div></article>
+ </div>
+</div></section>
+
+<section id="stand"><div class="wrap">
+ <div class="section-head"><div><div class="kicker">Schede Stand</div><h2>I poteri e le loro regole.</h2></div><p>Ogni Stand ha un'identità, una capacità distintiva e limiti che possono diventare il punto debole del suo utilizzatore.</p></div>
+ <div class="grid">
+  <article class="card"><div class="symbol">♔</div><h3>CHECKMATE</h3><span class="tag gold">Utilizzatore: Manuel</span><p>Stand di controllo strategico. Materializza una scacchiera sovrapposta alla realtà e permette di influenzare movimenti e posizioni entro regole precise.</p><div class="ability"><b>Scacchiera Reale</b><br>Assegna schemi di movimento, crea blocchi e prepara combinazioni tattiche.</div><p><b>Limiti:</b> richiede concentrazione, ha un numero limitato di elementi attivi e non garantisce previsioni infallibili.</p><div class="statsline"><span>Potenza B</span><span>Velocità B</span><span>Raggio C</span><span>Precisione A</span><span>Potenziale A</span></div></article>
+  <article class="card"><div class="symbol">🦊</div><h3>FOXFIRE</h3><span class="tag gold">Utilizzatore: Peppe</span><p>Stand creativo e versatile. Trasforma disegni, simboli e idee semplici in oggetti temporanei.</p><div class="ability"><b>Materializzazione Creativa</b><br>Può creare, per esempio, uno scudo, una catena, una porta o un'esca visiva.</div><p><b>Limiti:</b> la creazione deve essere immaginata con chiarezza; più è complessa, più energia mentale richiede. Non crea esseri viventi reali.</p><div class="statsline"><span>Potenza B</span><span>Velocità A</span><span>Raggio B</span><span>Precisione B</span><span>Potenziale A</span></div></article>
+  <article class="card"><div class="symbol">⚖</div><h3>ORDINANCE</h3><span class="tag">Utilizzatore: Il Maestro</span><p>Stand basato sull'imposizione di regole temporanee all'interno di un'area.</p><div class="ability"><b>Legge Sovrana</b><br>Può imporre condizioni come “nessuno può arretrare” o “ogni attacco deve essere ricambiato”.</div><p><b>Limiti:</b> le regole vincolano anche il Maestro. Il gruppo dovrà imparare a sfruttare le contraddizioni del suo potere.</p></article>
+ </div>
+ <div class="quote-box" style="margin-top:20px"><div class="quote">«Ogni situazione è una partita… e io penso sempre tre mosse avanti.»</div><p style="color:var(--muted);margin-bottom:0">— Manuel</p></div>
+</div></section>
+
+<section id="episodi"><div class="wrap">
+ <div class="section-head"><div><div class="kicker">Guida agli episodi</div><h2>La serie, episodio dopo episodio.</h2></div><p>Apri il primo episodio per leggere la storia. Gli altri titoli mostrano la scaletta narrativa prevista per la stagione.</p></div>
+ <div class="reader-tools"><input class="search" id="episodeSearch" placeholder="Cerca un episodio o una parola…" aria-label="Cerca episodi"><button class="btn secondary" id="expandAll">Apri tutto</button><button class="btn secondary" id="collapseAll">Chiudi tutto</button></div>
+ <div class="episode-list" id="episodeList">
+  <details class="episode" open data-search="01 giocatore grotte manuel peppe stand risveglio"><summary><span class="ep-num">01</span><span class="ep-title">Il giocatore di Grotte</span><span class="ep-state">EPISODIO COMPLETO</span><span>⌄</span></summary><div class="ep-body">
+   <p><b>Durata prevista:</b> 24 minuti · <b>Ambientazione:</b> Grotte, Agrigento · <b>Tema:</b> non puoi vincere una partita se non sai chi ha mosso per primo.</p>
+   <p>Una normale serata tra amici si trasforma in un incubo quando Manuel nota qualcosa di impossibile durante una partita a scacchi. Una pedina si muove da sola. Poco dopo, Peppe scopre di poter materializzare qualcosa che fino a quel momento esisteva soltanto nella sua immaginazione.</p>
+   <div class="scene">Sequenza 1 · Una sera qualunque · 00:00–03:00</div>
+   <p>Schermo nero. Si sente una pedina che tocca la scacchiera. <b>TAC.</b> Una voce: «La vita è una partita. La maggior parte delle persone non sa nemmeno di essere seduta al tavolo.»</p>
+   <p>Grotte, ore 20:46. Manuel e Peppe sono seduti a un tavolino davanti a una scacchiera.</p>
+   <div class="dialogue"><b>PEPPE:</b> «Ma tu nella vita pensi soltanto agli scacchi?»</div><div class="dialogue"><b>MANUEL:</b> «No.»</div><div class="dialogue"><b>PEPPE:</b> «Ah, meno male.»</div><div class="dialogue"><b>MANUEL:</b> «Penso anche a come vincere contro di te.»</div><div class="dialogue"><b>PEPPE:</b> «Sai qual è il tuo problema?»</div><div class="dialogue"><b>MANUEL:</b> «Che sto vincendo?»</div><div class="dialogue"><b>PEPPE:</b> «Che sei nato con la modalità tutorial attivata e ti credi un boss finale.»</div>
+   <p>Manuel sorride. «Scacco matto.» Peppe guarda la scacchiera: «Aspetta. Ma che cavolo? Questa pedina non era lì.» Il cavallo nero si è spostato da solo. <b>TAC.</b> La musica si interrompe.</p>
+   <div class="scene">Sequenza 2 · La pedina impossibile · 03:00–06:00</div>
+   <p>Manuel prende il cavallo e lo osserva.</p>
+   <div class="dialogue"><b>MANUEL:</b> «L'hai spostato tu?»</div><div class="dialogue"><b>PEPPE:</b> «Certo, perché mi annoiavo e volevo impressionarti.»</div><div class="dialogue"><b>MANUEL:</b> «Non sei divertente.»</div><div class="dialogue"><b>PEPPE:</b> «E tu non sei simpatico. Siamo pari.»</div>
+   <p>Le pedine iniziano a tremare. Le luci della piazza si spengono una dopo l'altra. Dal vicolo arriva una voce: «Finalmente.» Un uomo alto, vestito elegantemente di nero, è fermo sotto un lampione.</p>
+   <div class="dialogue"><b>SCONOSCIUTO:</b> «Il re ha finalmente trovato il suo cavaliere.»</div><div class="dialogue"><b>MANUEL:</b> «Chi sei?»</div><div class="dialogue"><b>SCONOSCIUTO:</b> «Qualcuno che ama i giochi.»</div><div class="dialogue"><b>PEPPE:</b> «Perfetto. Un altro che non ha amici.»</div>
+   <p>Dietro l'uomo appare una sagoma umanoide scura, con linee viola sul corpo e una maschera da giocatore di scacchi. «Chiamatemi… IL GIOCATORE.»</p>
+   <div class="scene">Sequenza 3 · Il primo Stand · 06:00–09:00</div>
+   <p>Il Giocatore alza una mano. «THE GAME.» Una scacchiera gigantesca compare sotto i piedi dei protagonisti. Il pavimento si trasforma in caselle bianche e nere.</p>
+   <div class="dialogue"><b>PEPPE:</b> «MANUEL! DIMMI CHE ANCHE TU STAI VEDENDO QUESTA ROBA!»</div><div class="dialogue"><b>MANUEL:</b> «La vedo.»</div><div class="dialogue"><b>PEPPE:</b> «E NON HAI NIENTE DA DIRE?!»</div><div class="dialogue"><b>MANUEL:</b> «Sto cercando di capire le regole.»</div>
+   <p>«Tre mosse. Avete tre mosse ciascuno. Se sbagliate, perderete qualcosa di più importante della partita.» Una forza invisibile spinge Manuel contro una casella. Dietro di lui emerge un guerriero regale viola e oro, con armatura a scacchi e corona.</p>
+   <div class="dialogue"><b>MANUEL:</b> «Ma… cosa sei?»</div><div class="dialogue"><b>CHECKMATE:</b> «ORDINE RICEVUTO.»</div><div class="dialogue"><b>PEPPE:</b> «OH. TU HAI UN COSO GIGANTE VIOLA DIETRO?!»</div>
+   <p>Un'esplosione arancione interrompe la conversazione. Alle spalle di Peppe appare FOXFIRE, una figura umanoide dalle sembianze di volpe, avvolta da fiamme rosse e dorate.</p>
+   <div class="dialogue"><b>PEPPE:</b> «IO HO UNA VOLPE?! NON SO COSA STA SUCCEDENDO, MA MI PIACE!»</div>
+   <div class="scene">Sequenza 4 · Le regole del gioco · 09:00–13:00</div>
+   <p>Il Giocatore muove un dito. Tre caselle si illuminano.</p>
+   <div class="dialogue"><b>IL GIOCATORE:</b> «Prima regola: ogni azione concede tre mosse.»</div><div class="dialogue"><b>IL GIOCATORE:</b> «Seconda regola: chi supera il limite perde una parte del proprio corpo.»</div><div class="dialogue"><b>IL GIOCATORE:</b> «Terza regola: vince chi riesce a immobilizzare l'avversario.»</div>
+   <div class="dialogue"><b>MANUEL:</b> «Quindi siamo dentro una partita a turni.»</div><div class="dialogue"><b>IL GIOCATORE:</b> «Esatto.»</div><div class="dialogue"><b>PEPPE:</b> «E se non vogliamo giocare?»</div><div class="dialogue"><b>IL GIOCATORE:</b> «Non avete scelta.»</div>
+   <p>Il nemico attacca con una lama d'ombra. Manuel viene scaraventato a terra. CHECKMATE si posiziona davanti a lui.</p>
+   <div class="dialogue"><b>MANUEL:</b> «Aspetta. Tu puoi muoverti quando te lo chiedo?»</div><div class="dialogue"><b>CHECKMATE:</b> «CONFERMATO.»</div><div class="dialogue"><b>MANUEL:</b> «Interessante.»</div>
+   <div class="scene">Sequenza 5 · La creatività contro le regole · 13:00–17:00</div>
+   <p>Il Giocatore prepara un altro attacco. Peppe si mette davanti a Manuel.</p>
+   <div class="dialogue"><b>PEPPE:</b> «Ehi, amico! Hai dimenticato una cosa.»</div><div class="dialogue"><b>IL GIOCATORE:</b> «E cosa sarebbe?»</div><div class="dialogue"><b>PEPPE:</b> «Che io non so giocare a scacchi.»</div>
+   <p>Manuel lo guarda: «Non è una cosa di cui vantarsi.» «ZITTO!» Peppe immagina uno scudo e lo disegna nell'aria. FOXFIRE lo materializza. L'attacco si infrange contro la barriera.</p>
+   <div class="dialogue"><b>PEPPE:</b> «HAHA! HAI VISTO?!»</div><div class="dialogue"><b>MANUEL:</b> «Sì. E hai appena scoperto di avere un potere interessante.»</div><div class="dialogue"><b>PEPPE:</b> «Grazie, professore.»</div>
+   <div class="scene">Sequenza 6 · Tre mosse avanti · 17:00–21:00</div>
+   <p>Manuel chiude gli occhi e ricostruisce la posizione delle pedine.</p>
+   <div class="dialogue"><b>MANUEL:</b> «Peppe. Devi fidarti di me.»</div><div class="dialogue"><b>PEPPE:</b> «Questa frase non mi piace mai.»</div><div class="dialogue"><b>MANUEL:</b> «Quando ti dirò di muoverti, disegna una porta alla tua sinistra.»</div><div class="dialogue"><b>PEPPE:</b> «Una porta? E poi?»</div><div class="dialogue"><b>MANUEL:</b> «Poi improvvisa.»</div>
+   <p>«CHECKMATE! SCACCHIERA REALE!» Una griglia viola attraversa il terreno. Enormi pezzi degli scacchi bloccano i passaggi. Manuel intrappola il nemico in una posizione sfavorevole. Peppe disegna una porta luminosa, la attraversa e appare alle spalle del Giocatore. FOXFIRE crea una catena che lo immobilizza momentaneamente.</p>
+   <div class="dialogue"><b>IL GIOCATORE:</b> «Cosa?!»</div><div class="dialogue"><b>MANUEL:</b> «Hai dimenticato che anche tu sei dentro la scacchiera.»</div><div class="dialogue"><b>MANUEL:</b> «Scacco. E adesso… matto.»</div>
+   <p>Una gigantesca corona viola scende sulla scacchiera. <b>BOOOOM!</b> Il Giocatore viene scaraventato contro il muro.</p>
+   <div class="scene">Sequenza 7 · Non era finita · 21:00–23:00</div>
+   <p>Il fumo si dirada. Il Giocatore è ancora in piedi, ma il suo Stand sembra danneggiato.</p>
+   <div class="dialogue"><b>PEPPE:</b> «Allora? Chi è il fenomeno adesso?»</div><div class="dialogue"><b>IL GIOCATORE:</b> «Non avete capito assolutamente nulla.»</div><div class="dialogue"><b>MANUEL:</b> «Che cosa vuoi dire?»</div><div class="dialogue"><b>IL GIOCATORE:</b> «Io non sono venuto qui per vincere. Sono venuto per verificare una cosa.»</div>
+   <p>Guarda Manuel: «CHECKMATE… finalmente.» Poi Peppe: «E FOXFIRE. Interessante.»</p>
+   <div class="dialogue"><b>PEPPE:</b> «Come fai a conoscere i nostri Stand?»</div><div class="dialogue"><b>IL GIOCATORE:</b> «Perché qualcuno vi sta cercando da molto tempo.»</div>
+   <p>Una pedina dorata cade a terra. Una luce accecante. Quando i ragazzi riaprono gli occhi, il nemico è scomparso.</p>
+   <div class="scene">Sequenza 8 · La partita è appena iniziata · 23:00–24:00</div>
+   <p>Manuel e Peppe camminano in silenzio.</p>
+   <div class="dialogue"><b>PEPPE:</b> «Quindi… abbiamo dei poteri?»</div><div class="dialogue"><b>MANUEL:</b> «Sembra di sì.»</div><div class="dialogue"><b>PEPPE:</b> «E adesso cosa facciamo?»</div><div class="dialogue"><b>MANUEL:</b> «Scopriamo chi è quel tizio.»</div><div class="dialogue"><b>PEPPE:</b> «E se ce ne fossero altri?»</div><div class="dialogue"><b>MANUEL:</b> «Allora li affrontiamo.»</div>
+   <p>La telecamera si allontana. Su un tetto, una figura osserva i due ragazzi e tiene una fotografia della Scacchiera di Akragas.</p>
+   <div class="dialogue"><b>VOCE MISTERIOSA:</b> «Il primo pezzo si è risvegliato. Avvisate il Maestro.»</div>
+   <p>La fotografia si gira. Sul retro è scritto: <b>AKRAGAS — ARCHIVIO RISERVATO.</b></p>
+   <div class="quote-box" style="margin-top:22px"><div class="quote">FINE EPISODIO 01 — TO BE CONTINUED…</div><p>Prossimo episodio: <b>02 — L'Ombra di Akragas</b></p></div>
+  </div></details>
+  <details class="episode" data-search="02 ombra akragas valle templi reliquia"><summary><span class="ep-num">02</span><span class="ep-title">L'ombra di Akragas</span><span class="ep-state">TRAMA IN SVILUPPO</span><span>⌄</span></summary><div class="ep-body"><p>Manuel e Peppe raggiungono la Valle dei Templi dopo aver trovato un riferimento all'Archivio Riservato. Sotto le rovine scoprono la prima traccia della Scacchiera di Akragas: un artefatto diviso in sette pezzi, la cui origine sembra precedere la storia conosciuta degli Stand.</p><p><b>Gancio finale:</b> una pedina incisa con un simbolo sconosciuto reagisce alla presenza di CHECKMATE.</p></div></details>
+  <details class="episode" data-search="03 nuove pedine alleati stand"><summary><span class="ep-num">03</span><span class="ep-title">Le nuove pedine</span><span class="ep-state">TRAMA IN SVILUPPO</span><span>⌄</span></summary><div class="ep-body"><p>I protagonisti incontrano altri utilizzatori di Stand. Un possibile alleato offre informazioni sull'artefatto, ma una contraddizione nei suoi racconti fa nascere il sospetto che qualcuno stia mentendo.</p></div></details>
+  <details class="episode" data-search="04 cavallo caltanissetta traiettorie"><summary><span class="ep-num">04</span><span class="ep-title">Il Cavallo di Caltanissetta</span><span class="ep-state">TRAMA IN SVILUPPO</span><span>⌄</span></summary><div class="ep-body"><p>Un avversario con uno Stand che si muove secondo traiettorie a L mette Manuel in difficoltà. Per la prima volta la strategia di CHECKMATE sembra non bastare.</p></div></details>
+  <details class="episode" data-search="05 trappola palermo foxfire"><summary><span class="ep-num">05</span><span class="ep-title">Trappola a Palermo</span><span class="ep-state">TRAMA IN SVILUPPO</span><span>⌄</span></summary><div class="ep-body"><p>Manuel e Peppe cadono in una trappola preparata da un gruppo di Stand User. FOXFIRE mostra una nuova possibilità della Materializzazione Creativa.</p></div></details>
+  <details class="episode" data-search="06 regina catania scambiare posizioni"><summary><span class="ep-num">06</span><span class="ep-title">La Regina di Catania</span><span class="ep-state">TRAMA IN SVILUPPO</span><span>⌄</span></summary><div class="ep-body"><p>Una Stand User può scambiare temporaneamente la posizione di due persone o oggetti. Manuel deve capire come anticipare un potere che cambia continuamente la disposizione del campo.</p></div></details>
+  <details class="episode" data-search="07 alleanze provvisorie gruppo"><summary><span class="ep-num">07</span><span class="ep-title">Alleanze provvisorie</span><span class="ep-state">TRAMA IN SVILUPPO</span><span>⌄</span></summary><div class="ep-body"><p>Il gruppo si allarga. Le personalità incompatibili generano rivalità e momenti comici, ma anche una nuova forza collettiva. Non tutti condividono lo stesso obiettivo.</p></div></details>
+  <details class="episode" data-search="08 ritorno maestro ordinance"><summary><span class="ep-num">08</span><span class="ep-title">Il ritorno del Maestro</span><span class="ep-state">TRAMA IN SVILUPPO</span><span>⌄</span></summary><div class="ep-body"><p>Il Maestro si mostra apertamente e rivela di conoscere CHECKMATE e FOXFIRE da molto prima del loro risveglio. Il suo Stand, ORDINANCE, può imporre regole temporanee in un'area.</p></div></details>
+  <details class="episode" data-search="09 torre tindari battaglia"><summary><span class="ep-num">09</span><span class="ep-title">La Torre di Tindari</span><span class="ep-state">TRAMA IN SVILUPPO</span><span>⌄</span></summary><div class="ep-body"><p>Una battaglia su più livelli costringe Manuel e Peppe a separarsi. Devono affrontare due avversari contemporaneamente, imparando a collaborare anche a distanza.</p></div></details>
+  <details class="episode" data-search="10 partita finale scacchiera"><summary><span class="ep-num">10</span><span class="ep-title">La partita finale</span><span class="ep-state">TRAMA IN SVILUPPO</span><span>⌄</span></summary><div class="ep-body"><p>Il Maestro recupera quasi tutti i pezzi della Scacchiera di Akragas. Un fenomeno soprannaturale coinvolge la Sicilia e rivela la portata del suo progetto.</p></div></details>
+  <details class="episode" data-search="11 scacco perdita checkmate"><summary><span class="ep-num">11</span><span class="ep-title">Scacco</span><span class="ep-state">TRAMA IN SVILUPPO</span><span>⌄</span></summary><div class="ep-body"><p>Manuel perde temporaneamente l'accesso a CHECKMATE. Peppe è costretto ad affrontare da solo una minaccia che sembra fuori dalla sua portata.</p></div></details>
+  <details class="episode" data-search="12 scacco matto finale royal fox"><summary><span class="ep-num">12</span><span class="ep-title">Scacco Matto</span><span class="ep-state">TRAMA IN SVILUPPO</span><span>⌄</span></summary><div class="ep-body"><p>I due protagonisti combinano i loro Stand in una tecnica inedita: ROYAL FOX — CHECKMATE. Il Maestro viene sconfitto, ma il settimo pezzo scompare. La partita non è finita.</p></div></details>
+ </div>
+</div></section>
+
+
+<section id="galleria"><div class="wrap">
+ <div class="section-head"><div><div class="kicker">Archivio visivo</div><h2>La galleria ufficiale della saga.</h2></div><p>Tutte le illustrazioni originali generate durante la creazione di CHECKMATE, raccolte in un unico posto. Tocca un'immagine per ingrandirla.</p></div>
+ <div class="gallery-grid">
+  <button class="gallery-card" type="button" data-full="images/a_vibrant_exaggerated_anime_cartoon_scene_of_the.png" data-title="Manuel in versione anime" aria-label="Apri immagine: Manuel in versione anime">
+          <img src="images/a_vibrant_exaggerated_anime_cartoon_scene_of_the.png" alt="Manuel in versione anime" loading="lazy">
+          <span class="gallery-caption"><b>Manuel in versione anime</b><small>Ritratto anime iniziale, con ambientazione colorata e dettagli cartoon.</small></span>
+        </button><button class="gallery-card" type="button" data-full="images/a_detailed_dynamic_jojo_s_bizarre_adventure_style.png" data-title="Manuel — Stand User" aria-label="Apri immagine: Manuel — Stand User">
+          <img src="images/a_detailed_dynamic_jojo_s_bizarre_adventure_style.png" alt="Manuel — Stand User" loading="lazy">
+          <span class="gallery-caption"><b>Manuel — Stand User</b><small>Prima illustrazione JoJo: Manuel con il suo Stand viola.</small></span>
+        </button><button class="gallery-card" type="button" data-full="images/a_dynamic_comic_manga_style_jojo_like_anime_poste.png" data-title="CHECKMATE — Stand profile" aria-label="Apri immagine: CHECKMATE — Stand profile">
+          <img src="images/a_dynamic_comic_manga_style_jojo_like_anime_poste.png" alt="CHECKMATE — Stand profile" loading="lazy">
+          <span class="gallery-caption"><b>CHECKMATE — Stand profile</b><small>Scheda illustrata dello Stand CHECKMATE e delle sue abilità.</small></span>
+        </button><button class="gallery-card" type="button" data-full="images/a_detailed_anime_style_illustrated_poster_series_p.png" data-title="La Scacchiera di Sicilia" aria-label="Apri immagine: La Scacchiera di Sicilia">
+          <img src="images/a_detailed_anime_style_illustrated_poster_series_p.png" alt="La Scacchiera di Sicilia" loading="lazy">
+          <span class="gallery-caption"><b>La Scacchiera di Sicilia</b><small>Primo poster della saga, con protagonisti, antagonista e scaletta della stagione.</small></span>
+        </button><button class="gallery-card" type="button" data-full="images/a_complex_vibrant_anime_manga_poster_layout_in_joj.png" data-title="Manuel &amp; Peppe — I due protagonisti" aria-label="Apri immagine: Manuel &amp; Peppe — I due protagonisti">
+          <img src="images/a_complex_vibrant_anime_manga_poster_layout_in_joj.png" alt="Manuel &amp; Peppe — I due protagonisti" loading="lazy">
+          <span class="gallery-caption"><b>Manuel &amp; Peppe — I due protagonisti</b><small>Poster della saga con CHECKMATE e FOXFIRE.</small></span>
+        </button><button class="gallery-card" type="button" data-full="images/a_cinematic_anime_storyboard_collage_comic_panel_l.png" data-title="Episodio 01 — Il giocatore di Grotte" aria-label="Apri immagine: Episodio 01 — Il giocatore di Grotte">
+          <img src="images/a_cinematic_anime_storyboard_collage_comic_panel_l.png" alt="Episodio 01 — Il giocatore di Grotte" loading="lazy">
+          <span class="gallery-caption"><b>Episodio 01 — Il giocatore di Grotte</b><small>Storyboard illustrato del primo episodio.</small></span>
+        </button>
+ </div>
+</div></section>
+
+<section id="lore"><div class="wrap">
+ <div class="section-head"><div><div class="kicker">Archivio del mondo</div><h2>La Scacchiera di Akragas.</h2></div><p>Un artefatto antico, sette pezzi e una domanda: chi ha scritto le regole?</p></div>
+ <div class="lore-grid">
+  <div class="card"><h3>Le sette reliquie</h3><p>Ogni pezzo custodisce un potere capace di alterare le manifestazioni degli Stand. La natura esatta dei poteri deve ancora essere scoperta.</p><div class="piece-list"><div class="piece"><b>♔ Re</b><small>Il comando</small></div><div class="piece"><b>♕ Regina</b><small>Il dominio</small></div><div class="piece"><b>♖ Torre</b><small>La difesa</small></div><div class="piece"><b>♗ Alfiere</b><small>La traiettoria</small></div><div class="piece"><b>♘ Cavallo</b><small>L'imprevedibilità</small></div><div class="piece"><b>♙ Pedone</b><small>La trasformazione</small></div><div class="piece"><b>?</b><small>Il Pezzo Senza Nome</small></div></div></div>
+  <div class="card"><h3>Le tappe della prima stagione</h3><div class="timeline"><div class="timeline-item"><b>Grotte</b><br><small>Il risveglio dei due protagonisti.</small></div><div class="timeline-item"><b>Akragas · Agrigento</b><br><small>Le prime tracce dell'artefatto.</small></div><div class="timeline-item"><b>Caltanissetta e Palermo</b><br><small>Nuovi Stand e nuove trappole.</small></div><div class="timeline-item"><b>Catania e Tindari</b><br><small>La posta in gioco diventa più grande.</small></div><div class="timeline-item"><b>Oltre la Sicilia</b><br><small>La porta verso la prossima parte della saga.</small></div></div></div>
+ </div>
+</div></section>
+
+<section id="tecniche"><div class="wrap">
+ <div class="section-head"><div><div class="kicker">Tecnica combinata</div><h2>ROYAL FOX — CHECKMATE.</h2></div><p>La prima tecnica congiunta immaginata per il duo: strategia e improvvisazione diventano un unico attacco.</p></div>
+ <div class="card"><p>Manuel materializza la Scacchiera Reale e limita le possibilità di movimento dell'avversario. Peppe crea pedine illusorie con FOXFIRE, confondendo la percezione del bersaglio. Manuel individua la mossa vincente, ma per completarla deve fidarsi dell'intuizione di Peppe senza poter prevedere ogni dettaglio.</p><div class="quote">«CHECKMATE pianifica. FOXFIRE cambia le regole.»</div></div>
+</div></section>
+</main>
+
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visualizzazione immagine" tabindex="-1">
+ <button class="lightbox-close" id="lightboxClose" type="button">✕ Chiudi</button>
+ <div class="lightbox-inner"><img id="lightboxImage" src="" alt=""><p id="lightboxTitle"></p></div>
+</div>
+
+<footer><div class="wrap footer-row"><div><b style="color:var(--gold)">CHECKMATE — LA SCACCHIERA DI SICILIA</b><br>Fan page narrativa non ufficiale, progetto creativo originale.</div><div>Realizzato per i fan · <a href="#home" style="color:var(--gold)">Torna all'inizio ↑</a><br><small>Non affiliato a Shueisha, David Production o ai detentori dei marchi JoJo's Bizarre Adventure.</small></div></div></footer>
+<button id="topBtn" aria-label="Torna in alto">↑</button>
+<script>
+const menuBtn=document.getElementById('menuBtn'),nav=document.getElementById('nav');
+menuBtn.addEventListener('click',()=>nav.classList.toggle('open'));
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+document.getElementById('expandAll').addEventListener('click',()=>document.querySelectorAll('.episode').forEach(e=>e.open=true));
+document.getElementById('collapseAll').addEventListener('click',()=>document.querySelectorAll('.episode').forEach(e=>e.open=false));
+document.getElementById('episodeSearch').addEventListener('input',e=>{
+ const q=e.target.value.toLowerCase().trim();
+ document.querySelectorAll('.episode').forEach(ep=>{ep.style.display=(!q||ep.innerText.toLowerCase().includes(q)||ep.dataset.search.includes(q))?'':'none';});
+});
+
+document.querySelectorAll('.gallery-card').forEach(card=>{
+ card.addEventListener('click',()=>{
+  const box=document.getElementById('lightbox');
+  const img=document.getElementById('lightboxImage');
+  img.src=card.dataset.full; img.alt=card.dataset.title;
+  document.getElementById('lightboxTitle').textContent=card.dataset.title;
+  box.classList.add('open'); box.focus(); document.body.style.overflow='hidden';
+ });
+});
+function closeLightbox(){
+ const box=document.getElementById('lightbox');
+ box.classList.remove('open'); document.body.style.overflow='';
+ document.getElementById('lightboxImage').src='';
+}
+document.getElementById('lightboxClose').addEventListener('click',closeLightbox);
+document.getElementById('lightbox').addEventListener('click',e=>{
+ if(e.target.id==='lightbox') closeLightbox();
+});
+document.addEventListener('keydown',e=>{
+ if(e.key==='Escape') closeLightbox();
+});
+
+const topBtn=document.getElementById('topBtn');
+window.addEventListener('scroll',()=>topBtn.style.display=window.scrollY>500?'block':'none');
+topBtn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+</script>
+</body></html>
